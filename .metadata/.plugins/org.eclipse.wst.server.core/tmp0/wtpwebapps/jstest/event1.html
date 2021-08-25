@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<script>
+function f1(){
+	alert('이벤트발생');
+	//10문장
+}
+//고전 이벤트 모델
+window.onload = function(){
+	var btn2 = document.getElementById("btn2");
+	btn2.onclick = function(){
+		this.value = "클릭했음";
+	}
+}
+
+</script>
+
+<form action = "a.html">
+<input type = text><br>
+
+<input type = 'button' value = "버튼" onclick = "f1()"><br>
+<input id = "btn2" type = 'button' value = "버튼2"><br>
+<button id = "btn3">버튼3</button>>
+
+<input type = 'submit' value = "전송버튼" ><br>
+<input type = 'submit' value = "취소버튼" ><br>
+
+</form>
+</body>
+</html>

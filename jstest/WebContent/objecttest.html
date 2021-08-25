@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+ //객체 : 100김사원 45600.99 출력기능함수
+ //		200 박대리 56000.00 출력기능함수, 보너스 기능함수
+//1. 객체 리터럴값 제공 생성 - json
+var emp1 = {
+		 id:100,
+		 name:'김사원',
+		 salary:45600.99,
+		 printLfunction(){
+			 document.write("<h3>"+this.id+":"+this.name+":"+this.salary+"</h3>");
+		 }
+}
+var emp2 = {
+		 id:200,
+		 name:'박대리',
+		 salary:55600.99,
+		 printLfunction(){
+			 document.write("<h3>"+this.id+":"+this.name+":"+this.salary+"</h3>");
+		 }
+}
+
+
+ function Employee(id, name, salary){
+	 this.id = id;
+	 this.name = name;
+	 this.salary = salary;
+	 this.print = function(){
+		 document.write("<h3>" + this.id + ":" + this.name+":"+this.salary+"</h3>");
+	 };
+ }
+ 
+//2.생성자 함수 통해 객체 생성
+var emp3 = new Employee(300, '최과장', 66000.5);
+var emp3 = new Employee(400, '최과장', 66000.5);
+var emp3 = new Employee(500, '최과장', 76000.5);
+ 
+emp3.print();
+emp4.print();
+emp5.print();
+
+document.write( emp1.constructor + "<br>");
+document.write( typeof emp2 + "<br>");
+document.write( emp3.constructor + "<br>");
+
+
+</script>
+
+</body>
+</html>

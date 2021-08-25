@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var i = 100;//전역변수
+
+function f1(){
+	var i = 200;//지역변수
+	document.write(i+"<br>");
+}
+
+f1();
+
+function test (i,j,k) {alert ("테스트함수실행");}
+
+function f2(f){ //함수를 매개변수로 정의
+	f();
+	//지역함수
+	function inner(){
+		alert("지역함수실행");
+	}
+	inner();
+	return inner();
+}
+
+f2 (test);
+/* inner(); */
+</script>
+
+</body>
+</html>

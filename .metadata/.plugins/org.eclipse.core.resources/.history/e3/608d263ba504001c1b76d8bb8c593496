@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>domtest3</title>
+<style>
+</style>
+
+</head>
+<body>
+
+<div id="target"></div>
+<img src = '/htmltest/images/html5.jpg'>
+
+<script type="text/javascript">
+var div = document.getElementById("target");
+
+div.innerHTML = "<H1>여기는 타겟입니다.</H1><IMG SRC = '/htmltest/images/google.png'>";
+//div.textContent = "<H1>여기는 타겟입니다.</H1><IMG SRC = '/htmltest/images/google.png'>";
+div.style.backgroundColor = "pink";
+var img = document.getElementsByTagName("img");
+img.src = "/htmltest/images/jquery.jpg";
+
+</script>
+</body>
+</html>

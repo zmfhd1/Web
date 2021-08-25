@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var input = prompt("입력하세요");
+document.write("<h1>" + input + "</h1>"); //취소하면 널값
+
+var input2 = confirm("진짜로 삭제합니까?");
+document.write("<h1>" + input2 + "</h1>");
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

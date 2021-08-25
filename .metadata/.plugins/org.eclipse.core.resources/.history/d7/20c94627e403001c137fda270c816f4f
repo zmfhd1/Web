@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fortest2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+<table>
+<tr><th>번호</th><th>제목</th><th>작성자</th><th>조회수</th>
+for(i=1; i<6; i++){
+	<tr><th>i</th><th>제목i</th><th>작성자i</th><th>10*i</th>
+}
+
+<!-- 자바스크립트 반복문 사용하여 조회수 증가 표시해보기 -->
+
+</script>
+
+
+
+
+</table>
+</body>
+</html>

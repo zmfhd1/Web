@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var r1 = (function (i,j){
+	return i*j;
+})(10,20);
+
+document.write(typeof r1 + "<br>");
+
+var f2 = function (i){
+	return i+i;
+}
+document.write(typeof f2 + "<br>");
+
+var r2 = f2(1);
+var r3 = f2(3.14);
+document.write(r2 + "<br>");
+document.write(r3+ "<br>");
+document.write(f2("script") + "<br>");
+
+var f3 = function(){
+	document.write("무명함수실행<br>");
+}
+
+document.write(f3() + "<br>"); //return값이 없는데 출력하라고 하면 undefined발생
+
+
+</script>
+</body>
+</html>

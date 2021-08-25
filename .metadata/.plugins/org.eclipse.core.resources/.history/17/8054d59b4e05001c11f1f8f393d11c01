@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.2.1.min.js"></script>
+
+<script>
+jquery 문장 사용해서 html태그 dom
+</script>
+</head>
+<body>
+
+</body>
+</html>

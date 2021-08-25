@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.2.1.min.js"></script>
+
+<script>
+//jquery 문장 사용해서 html태그 dom
+
+$(document).ready( function() {
+	alert("보이나요?");
+}
+);//ready end ---> javascript의 window.onload와 동일한 표현이다.
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

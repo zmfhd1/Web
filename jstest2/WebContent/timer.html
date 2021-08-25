@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id = "here">
+<script>
+
+//div태그 내부 5초후에 현재시각 표시
+function now(){
+	var t = new Date().toLocaleTimeString();
+	document.getElementById("here").innerHTML = t;
+}
+
+now();
+
+</script>
+
+</div>
+</body>
+</html>

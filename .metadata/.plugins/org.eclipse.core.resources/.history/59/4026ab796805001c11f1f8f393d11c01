@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jqueryattrtest</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('img').attr("src", "/htmltest/images/iphone.png")
+	$('img').attr("width", 100);
+	$('img').attr("height", 100);
+	var src = $("img").attr("src"); //getter - img태그의 src속성값
+	var width = $("img").attr("width"); //getter - img태그의 width속성값
+	var height = $("img").attr("height"); //getter - img태그의 height속성값
+	$("#result").html(src); 
+});
+</script>
+</head>
+<body>
+<h1>이미지를 보여드립니다.</h1>
+<img src="/htmltest/images/android.jpg">
+</body>
+</html>

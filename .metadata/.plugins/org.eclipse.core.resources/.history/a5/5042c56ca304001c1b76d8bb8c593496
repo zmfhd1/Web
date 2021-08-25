@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>domtest3</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+var div = document.getElementsByTagName("div");
+alert(typeof div);
+</script>
+</div>
+</body>
+</html>

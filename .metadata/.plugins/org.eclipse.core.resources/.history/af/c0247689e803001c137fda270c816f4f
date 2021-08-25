@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fortest2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+document.write('<table border = "1">');
+document.write('<tr> <th>번호</th> <th>제목</th> <th>작성자</th> <th>조회수</th> <tr>');
+
+for(i=1; i<6; i++){
+	document.write('<tr> <td></td> <td>제목</td> <td>작성자</td> <td>10</td> </tr>');
+}
+/* for(i=1; i<6; i++){
+	document.write('<tr>');
+	for(j=1; j<5; j++){
+		document.write('<td>')
+	}
+	document.write('<tr> <td>i</td> <td>제목i</td> <td>작성자i</td> <td>10*i</td> </tr>');
+}
+ */
+document.write('</table>');
+
+
+</script>
+
+
+
+
+</body>
+</html>

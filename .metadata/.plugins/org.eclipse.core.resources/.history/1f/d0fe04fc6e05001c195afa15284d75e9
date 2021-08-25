@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jqueryattrtest</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('img').attr("src", "/htmltest/images/iphone.png")
+	
+	$('img').attr("width", 100); //img태그의 width속성에 100을 넣는다.
+	//$('img').css("width", "100px"); //img태그의 width속성에 100을 넣는다. 위 문장과 같은 의미이다.
+	
+	$('img').attr("height", 300); //img태그의 height속성에 300을 넣는다.
+	var src = $("img").attr("src"); //getter - img태그의 src속성값
+	var width = $("img").attr("width"); //getter - img태그의 width속성값
+	var height = $("img").attr("height"); //getter - img태그의 height속성값
+	$("#result").html("이미지파일명=" + src + " 가로크기=" + width + " 세로크기=" + height);
+	
+	$('img').removeAttr('src');
+	
+	//html - text - append 차이를 확인해보자
+	//$("#contents").html("<input type = password><br>") //setter용도(이전 컨텐츠 삭제)
+	$("#contents").append("<input type = password><br>") //setter용도(이전 컨텐츠 삭제)
+	var contents = $("#contents").append();//getter용도
+	alert(contents);
+	
+	$("#contents").css("border", "1px solid red");
+	$("#contents").empty(); //자식 요소제거
+	$("#contents").remove(); //나 자신 제거
+	
+	$("h1:last, div:last").addClass("clas1");
+	
+});
+</script>
+</head>
+<body>
+<h1>이미지를 보여드립니다.</h1>
+<img src="/htmltest/images/android.jpg">
+<div id = "result"></div>
+
+<div id = "contents">
+  <input type="text"><br>
+</div>
+
+<h1> 클래스 속성을 공부합니다. </h1>
+<div> 클래스 속성을 공부합니다. </div>
+
+
+</body>
+</html>

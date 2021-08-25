@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+window.onload = function()
+{	
+	//input type radio 5개 태그 읽어와라
+	//id change 태그 읽어와라
+	//id result 태그 읽어와라
+	
+	var radio_list = document.querySelectorAll("input[type = radio]");
+	var h1 = document.getElementById("change");
+	var div = document.getElementById("result");
+	
+	for(i = 0; i < radio_list.length; i++){
+		radio_list[i].onchange = function(){			
+		div.textContent = this.value + ":" + this.checked;
+		h1.style.color = this.value;
+		}		
+	}
+}
+
+</script>
+
+</head>
+<body>
+<H1 id="change"> 색상 변경하기 </H1>
+<input type="radio" value='red' name="col">빨강색
+<input type="radio" value='blue' name="col">파랑색
+<input type="radio" value='green' name="col">녹색
+<input type="radio" value='silver' name="col">회색
+<input checked type="radio" value='black' name="col">검정색
+
+<div id=result > </div>
+</body>
+</html>

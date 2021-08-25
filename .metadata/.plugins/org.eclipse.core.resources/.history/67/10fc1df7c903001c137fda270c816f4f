@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//연산자 +-*/ % ++ --, > >= < <= == !=
+// === 연산자 자바와 차이점
+// 변수
+alert(10 +20);
+</script>
+</head>
+<body>
+
+</body>
+</html>

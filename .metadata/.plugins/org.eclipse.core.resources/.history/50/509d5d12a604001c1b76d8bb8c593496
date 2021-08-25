@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>domtest4</title>
+</head>
+<body>
+<a href="a.html"> a.html 링크</a><br>
+<a href="b.html"> b.html 링크</a><br>
+<a href="c.html"> c.html 링크</a><br>
+<a href="d.html"> d.html 링크</a><br>
+<a href="e.html"> e.html 링크</a><br>
+</body>
+</html>

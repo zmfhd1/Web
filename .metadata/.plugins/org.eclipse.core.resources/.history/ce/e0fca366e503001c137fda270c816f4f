@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fortest2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+for(i=1; i<6; i++){
+<table>
+<tr><th>번호</th><th>제목</th><th>작성자</th><th>조회수</th>
+	<tr><th>i</th><th>제목i</th><th>작성자i</th><th>10*i</th>
+</table>
+}
+
+</script>
+
+
+
+
+</body>
+</html>

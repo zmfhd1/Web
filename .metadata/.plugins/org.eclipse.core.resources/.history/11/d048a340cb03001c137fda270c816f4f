@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//연산자 +-*/ % ++ --, > >= < <= == !=
+// === 연산자 자바와 차이점
+// 변수
+var i = "출력";
+alert(i); //팝업창 출력 - 모달
+console.log(i);
+document.write(i+"<br>"); //브라우저 문서 출력
+document.write(i+"<br>");
+
+var j = 10;
+var k = 3;
+document.writer(j / k + "<br>") ;
+document.writer( parseInt(j / k) + "<br>") ;
+
+var s1 = "100"; //문자열
+var s2 = 100; //숫자(정수)
+
+document.write( (s1 == s2) + "<br>");
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

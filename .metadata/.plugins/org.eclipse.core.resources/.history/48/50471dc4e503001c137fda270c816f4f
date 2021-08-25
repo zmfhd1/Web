@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fortest2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+const rowCnt =  6;
+const colCnt = 4;
+
+document.write('<table border = "1">');
+for (i=0; i<rowCnt; i++){
+	document.write('<tr>');
+	
+	for(j=0; j<colCnt; j++){
+		document.write('<td>');
+		document.write('j');
+		document.write('</td>');
+		document.write('<td>');
+		document.write('제목j');
+		document.write('</td>');
+		document.write('<td>');
+		document.write('작성자j');
+		document.write('</td>');
+		document.write('<td>');
+		document.write('10*j');
+		document.write('</td>');		
+	}
+	document.write('</td>');
+}
+document.write('</table>');
+}
+
+</script>
+
+
+
+
+</body>
+</html>

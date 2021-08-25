@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//연산자 +-*/ % ++ --, > >= < <= == !=
+// === 연산자 자바와 차이점
+// 변수
+var i = "출력";
+alert(i); //팝업창 출력 - 모달
+console.log(i);
+document.write(i+"<br>"); //브라우저 문서 출력
+document.write(i+"<br>");
+
+var j = 10;
+var k = 3;
+document.write(j / k + "<br>") ;
+document.write( parseInt(j / k) + "<br>") ;
+
+var s1 = "100"; //문자열
+var s2 = 100; //숫자(정수)
+
+document.write( (s1 == s2) + "<br>"); //값 동일 true
+document.write( (s1 === s2) + "<br>"); // 값, 자료형 동일 false
+
+//여러번 중복 선언(실수라면 어쩔텐가?)
+var v1 = "var로 선언"
+document.write( v1 + "<br>") ;
+var v1 = "var로 선언-수정";
+document.write( v1 + " <br>");
+
+//es6 - let 1번 선언 + 수정 가능
+let v2 = "let으로 선언"
+document.write( v2 + " <br>");
+v2 = "let으로 선언"
+document.write( v2 + " <br>");
+
+//es6 - const 1번 선언 + 수정 불가
+const v3 = "const 으로 선언"
+document.write( v3 + " <br>");
+/* v3 = "let으로 선언"
+document.write( v3 + " <br>"); */
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

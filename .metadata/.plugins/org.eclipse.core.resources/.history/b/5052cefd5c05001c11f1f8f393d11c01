@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	//h1태그의 색상 변경
+	//$('h1').css("color", "blue"); // h1태그 변경
+	//$("#second").css("color", "blue"); //id-second 변경
+	//$(".red").css("background-color", "#ff0000"); //class - red 변경
+	$('h1>a').css('text-decoration', 'none');
+	
+});
+</script>
+
+</head>
+<body>
+<h1 class="red"> 제목1 </h1>
+<h1 id="second"> 제목2</h1>
+<h1> <a href="a.html"> 링크1 </a></h1>
+<a class="red" href="b.html"> 링크2 </a><br>
+<input type=text value="기본문자열"><br>
+<input type=password value="기본암호"><br>
+<input type=tel value="기본"><br>
+<input type=url value="http://"><br>
+<input type=email value="a@b.com"><br>
+<input type=button value="버튼"><br>
+<button>버튼2</button>
+<table>
+<tr><th>번호</th><th>제목</th><th>내용</th><th>작성자</th></tr>
+<tr><td>1</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>2</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>3</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>4</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>5</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>6</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>7</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+</table>
+</body>
+
+</html>

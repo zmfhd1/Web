@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Process-1</h1>
+<h1>Process-2</h1>
+<a id = 'stest1' href="a.html">링크1</a>
+<a class = "test2" href="b.html">링크2</a>
+<a class = "test2" href="c.jsp">링크3</a>
+
+
+<script>
+var one_tag = document.getElementById("test1");
+/* alert(one_tag.tagName); */
+//h1태그들 읽어오자
+
+var array = document.getElementsByTagName("a");
+/* alert(array.length);
+alert(array[0].innerHTML); */
+
+//class test2 태그들 읽어오자
+var array2 = document.getElementsByClassName("test2");
+/* alert(array2.length);
+alert(array2[0].innerHTML); */
+
+var one_tag2 = document.querySelector("a[href='c.jsp']");
+alert(one_tag2.innerHTML);
+
+document.querySelectorAll("a[href*=html]");
+alert(array3.length);
+alert(array3[0].innerHTML);
+alert(array3[1].innerHTML);
+
+</script>
+</body>
+</html>

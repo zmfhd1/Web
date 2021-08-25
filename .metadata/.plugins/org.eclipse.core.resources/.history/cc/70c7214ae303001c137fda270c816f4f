@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//길이가 7인 배열 선언
+ var a1 = [1, 3.14, true, "javascript", [1,2,3], undefined, null];
+ a1[a1.length-1] = "수정";
+ a1[5] = "수정2";
+ a1[4][0] = 10; //4번째 배열값 수정
+ //7짜리 배열에 10번인덱스 값을 추가하면?(중간에 비어있는 값은 undefined)
+ a1[10] = "10번인덱스값"
+ 
+ document.write("배열 데이터 갯수 = "  + a1.length + "<br>");
+ 
+ for(var i = 0; i < a1.length; i++){
+	if(a1[i] == undefined) {break;}
+ 	document.write("<h3>" + a1[i] + "</h3>");
+}
+ 
+ 	document.write("<h3>반복문없이 배열조회 = " + a1.join(',') + "</h3>");
+</script>
+</body>
+</html>

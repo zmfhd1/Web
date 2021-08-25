@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquerytest</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	//$('h1').css("color", "blue"); // h1태그 속성 변경
+	//$("#second").css("color", "blue"); //id-second 속성 변경
+	//$(".red").css("background-color", "#ff0000"); //class=red 태그 속성 변경
+	//$('h1>a').css('text-decoration', 'none'); //h1태그 내부에있는 a태그 속성 변경
+	//$("h1,td").css("background-color", "yellow"); //h1태그와 td 태그 속성 변경
+	//$("h1.red").css("background-color", "yellow"); //class=red인 h1태그 속성 변경
+	//$("input[type=text]").css("background-color", "yellow"); //input type=text 태그 속성 변경
+	//$("input:password").css("background-color", "yellow"); //input type=password 태그 속성 변경
+	//$("input:button").css("background-color", "yellow"); //input type=button 태그 속성 변경
+	//$("input:button, button").css("background-color", "yellow"); //input type=button, 태그가 button인 2개의 태그 속성 변경
+	//$("th").css("background-color", "pink"); //th태그 배경 변경
+	//$("tr:first").css("background-color", "orange"); //첫번째 tr태그 배경 변경
+	//$("tr:last").css("background-color", "orange"); //마지막 tr태그 배경 변경
+	//index는 0부터 시작이기때문에 우리가 생각하는 홀,짝을 다르게 인식한다
+	//$("tr:even").css("background-color", "aqua"); //홀수 tr태그 배경 변경
+	//$("tr:odd").css("background-color", "orange"); //짝수 tr태그 배경 변경
+	//$("tr:gt(2)").css("background-color", "orange");//4번째 tr부터 나머지 모든 tr태그 변경 gt => greater than()=뭐보다 클때 
+	//$("tr:gt(2), tr:eq(2)").css("background-color", "orange");//3번째 tr부터 나머지 모든 tr태그 변경 gt => greater than()=뭐보다 클때 
+	//$("tr:lt(2)").css("background-color", "orange");//3번째 이하 tr태그 변경
+	//$("tr:nth-child(3n)").css("background-color", "orange");//tr인덱스 3의 배수
+	
+	
+	//alert($("h1.red").css("color")); //색깔은 색상이름, hexa값, rgb값 으로 표현 가능.
+	//alert($("h1").css("color")); //색깔은 색상이름, hexa값, rgb값 으로 표현 가능.
+	
+	var h1 = $("h1"); //h1태그를 변수에 저장
+	//alert(h1.length); //h1태그 갯수 출력
+	for (var i = 0; i < h1.length; i++) {
+		var col = (i+1)*50;
+		$(h1[i]).css("color", " rgb( " + col + ", " + col + ", " + col + ") ");
+	}
+	//$("h1").css('color', "blue");
+});
+</script>
+
+</head>
+<body>
+<h1 class="red"> 제목1 </h1>
+<h1 id="second"> 제목2</h1>
+<h1> <a href="a.html"> 링크1 </a></h1>
+<a class="red" href="b.html"> 링크2 </a><br>
+<input type=text value="기본문자열"><br>
+<input type=password value="기본암호"><br>
+<input type=tel value="기본"><br>
+<input type=url value="http://"><br>
+<input type=email value="a@b.com"><br>
+<input type=button value="버튼"><br>
+<button>버튼2</button>
+<table>
+<tr><th>번호</th><th>제목</th><th>내용</th><th>작성자</th></tr>
+<tr><td>1</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>2</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>3</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>4</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>5</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>6</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+<tr><td>7</td><td>제목1</td><td>내용1</td><td>작성자1</td></tr>
+</table>
+</body>
+
+</html>

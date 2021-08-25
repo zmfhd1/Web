@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.onload =function(){
+	var div_test = document.getElementById("test");
+	div_test.onclick = function() {
+		this.style.color = "red";
+	}
+	div_test.onmouseover = function(){
+		this.style.color = "green";
+	}
+	div_test.onmouseout = function(){
+		this.style.color = "blue";
+	}
+	
+	var phone = document.querySelector("input[type=text]");
+	phone.onkeyup = function(e){
+		if(e.keycode >= 48 && e.keycode <= 57){
+			document.getElementById("result").innerHTML = "적합";
+		}
+		else{
+			document.getElementById("result").innerHTML = e.keycode + "부적합";
+		}
+	}
+}
+</script>
+
+
+</head>
+<body>
+
+<div><a href = "a.html">a.html로 이동</a></div>
+<div id = "test">여기를 클릭하면 빨간색으로 변합니다.</div>
+
+<form action = "b.jsp">
+폰번호 : <input type = text name = "phone"><br>
+<div id = result></div>
+<input type = radio name = "title" value = "사원"> 사원
+<input type = radio name = "title" value = "대리"> 대리
+<input type = radio name = "title" value = "과장"> 과장
+<input type = radio name = "title" value = "부장"> 부장
+<input type = submit value = "전송">
+
+</form>
+</body>
+</html>

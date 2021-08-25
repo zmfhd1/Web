@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.onload =function()
+{
+	var div_test = document.getElementById("test");
+	div_test.onclick = function() {
+		this.style.color = "red";
+	}
+	div_test.onmouseover = function() {
+		this.style.color = "green";
+	}
+	div_test.onmouseout = function() {
+		this.style.color = "blue";
+	}
+	
+	var phone = document.querySelector("input[type=text]");
+	phone.onkeyup = function(e) 
+	{
+		if(e.keycode >= 48 && e.keycode <= 57){
+			document.getElementById("result").innerHTML = "적합";
+		}
+		else{
+			document.getElementById("result").innerHTML = e.keycode + " : 부적합";
+		}
+	}//keyup
+	
+	var form = document.getElementsByTagName("form")[0];
+	form.onsubmit = function(event) 
+	{
+		event.preventDefault();
+		document.getElementById("result").innerHTML = "전송하는 기본 동작을 취소했습니다";
+	}
+	
+	var a = document.querySelectorAll("div > a");
+	a.onclick = function(ev){
+		ev.preventDefault();
+	}
+	
+	var radio_list = document.querySelectorAll("input[type=radio]");
+	for(var i = 0; i<radio_list.length; i++){
+		radio_list[i].onclick = function(){
+			document.getElementById("result").innerHTML = this.value;
+		}
+	}
+	
+}
+</script>
+
+
+</head>
+<body>
+
+<div><a href = "a.html">a.html로 이동</a></div>
+<a href = "c.html">c.html로 이동</a>
+<div id = "test">여기를 클릭하면 빨간색으로 변합니다.</div>
+
+<form action = "b.jsp">
+폰번호 : <input type = text name = "phone"><br>
+<div id = result></div>
+<input type = radio name = "title" value = "사원"> 사원
+<input type = radio name = "title" value = "대리"> 대리
+<input type = radio name = "title" value = "과장"> 과장
+<input type = radio name = "title" value = "부장"> 부장
+<input type = submit value = "전송">
+
+</form>
+</body>
+
+</html>
