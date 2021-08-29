@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+<h1> 회원 로그인 정보 입력창</h1>
+
+<!-- http://localhost:9090/servlettest/loginform.html -->
+<form action = "loginform" method="post">
+	아이디 입력 : <input type=text name="id"><br> <!-- name이 자바소스의 파라미터명 -->
+	암호 입력 : <input type=password name="pw"><br> <!-- name이 자바소스의 파라미터명 -->
+	관심 분야: <br>
+	<input type="checkbox" name="con" value="경제"> 경제<br> <!-- name이 자바소스의 파라미터명 -->
+	<input type="checkbox" name="con" value="주식"> 주식<br>
+	<input type="checkbox" name="con" value="코딩"> 코딩<br>
+	<input type="checkbox" name="con" value="AI"> AI<br>
+	<input type=submit value="로그인"><br>
+</form>
+</body>
+</html>
